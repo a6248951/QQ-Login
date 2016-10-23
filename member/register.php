@@ -1,9 +1,6 @@
 <?php 
 require 'config.inc.php';
 require '../common.inc.php';
-echo "------";
-echo $module;
-echo "------";
 
 require AJ_ROOT.'/module/'.$module.'/register.inc.php';
 
