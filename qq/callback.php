@@ -2,13 +2,6 @@
 require '../../../common.inc.php';
 require 'init.inc.php';
 
-
-var_dump( $MODULE[2]['linkurl'].$AJ['file_login'].'?step=callback&site='.$site);
-var_dump($_REQUEST['code']);
-
-
-
-
 $_REQUEST['code'] or dalert('Error Request.', $MODULE[2]['linkurl'].$AJ['file_login'].'?step=callback&site='.$site);
 
 $_REQUEST['state'] == $_SESSION['state'] or dalert('Error Request.', $MODULE[2]['linkurl'].$AJ['file_login'].'?step=callback&site='.$site);
