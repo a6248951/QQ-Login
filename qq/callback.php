@@ -2,7 +2,7 @@
 require '../../../common.inc.php';
 require 'init.inc.php';
 
-echo "aaaaaaaaaaa";
+
 var_dump( $MODULE[2]['linkurl'].$AJ['file_login'].'?step=callback&site='.$site);
 var_dump($_REQUEST['code']);
 
