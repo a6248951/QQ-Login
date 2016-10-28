@@ -1,16 +1,9 @@
 <?php
 require '../../../common.inc.php';
 require 'init.inc.php';
-var_dump("aaaaaaaa");
 $success = 0;
 $DS = array();
-
-//var_dump($DS);
-//var_dump($_SESSION['qq_access_token']);
-//exit;
-
 if($_SESSION['qq_access_token']) {
-	
 	$par = 'access_token='.$_SESSION['qq_access_token'];
 	$rec = dcurl(QQ_ME_URL, $par);
 	if(strpos($rec, 'client_id') !== false) {
