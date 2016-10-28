@@ -1,9 +1,6 @@
 <?php
 require '../../../common.inc.php';
 require 'init.inc.php';
-
-echo "aaaaaaaaaaa";
-
 $OAUTH[$site]['sync'] or exit;
 $_token = get_cookie('qq_token');
 $_openid = get_cookie('qq_openid');
